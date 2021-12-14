@@ -1,0 +1,17 @@
+<div class="main-container">
+    <div class="search-bar-container">
+        <div class="field">
+        </div>
+    </div>
+
+    <button class="button floating-add-button is-primary" routerLink="addNote">+ Add Note</button>  
+    <div class="class-notes">
+      <app-note-card 
+      *ngFor="let note of notes;let i=index;"
+      [routerLink]="note.noteId"
+      (delete)="deleteNote(note.noteId)"
+      [title]="note.title" 
+      [body]= "note.body"></app-note-card>
+  </div>
+  </div>
+

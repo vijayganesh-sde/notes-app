@@ -1,0 +1,16 @@
+.main-container {
+    display:flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto ;
+    padding-top: 50px;
+}
+.class-notes {
+    margin-top: 30px;
+}
+.floating-add-button {
+    position: fixed;
+    bottom:5px;
+    width: 500px;
+    font-size: 25px;
+}
